@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="false">
+  
+  
+
+<!--************** student ***********-->
+ <servlet>
+    <servlet-name>loginServer</servlet-name>
+    <servlet-class>server.loginServer</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loginServer</servlet-name>
+    <url-pattern>/loginServer</url-pattern>
+  </servlet-mapping> 
+  
+  
+   <servlet>
+    <servlet-name>addServlet</servlet-name>
+    <servlet-class>server.addServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>addServlet</servlet-name>
+    <url-pattern>/addServlet</url-pattern>
+  </servlet-mapping> 
+  
+  
+     <servlet>
+    <servlet-name>selectServlet</servlet-name>
+    <servlet-class>server.selectServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>selectServlet</servlet-name>
+    <url-pattern>/selectServlet</url-pattern>
+  </servlet-mapping> 
+  
+  
+         <servlet>
+    <servlet-name>editServlet</servlet-name>
+    <servlet-class>server.editServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>editServlet</servlet-name>
+    <url-pattern>/editServlet</url-pattern>
+  </servlet-mapping> 
+  
+  
+         <servlet>
+    <servlet-name>deleteServlet</servlet-name>
+    <servlet-class>server.deleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>deleteServlet</servlet-name>
+    <url-pattern>/deleteServlet</url-pattern>
+  </servlet-mapping> 
+  
+  <!-- ************************************** -->
+        
+
+
+</web-app>
